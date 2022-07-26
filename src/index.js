@@ -2,24 +2,37 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const TodoList = () => {
-   return (
-      <ul>
-         <li>Learn React</li>
-         <li>Build Awesome App</li>
+      const items = ['Learn React', 'Build Awesome App', 'Drink water']
+
+      return (
+      <ul className='list-group list-group-flush' style={marginAutoStyle}>
+         <li className='list-group-item'>{ items[0] }</li>
+         <li className='list-group-item'>{ items[1] }</li>
+         <li className='list-group-item'>{ items[2] }</li>
       </ul>
    );
 };
 
 const AppHeader = () => {
-   return <h1>My Todo list</h1>
+   return <h1 className='text-center'>My Todo list</h1>
 };
 
 const SearchPanel = () => {
-   return <input placeholder='search'></input>
+  const searchText = 'Type here to search'
+  
+   return <input 
+      className='form-control'
+      style={marginAutoStyle}
+      placeholder={searchText} />
+};
+
+const marginAutoStyle = {
+   margin: 'auto',
+   width: '90%'
 };
 
 const App = () => {
-   return (
+      return (
       <div>
          <AppHeader />
          <SearchPanel />
