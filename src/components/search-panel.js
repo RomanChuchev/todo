@@ -11,6 +11,7 @@ const SearchPanel = () => {
 
  const marginAutoStyle = {
    margin: 'auto',
+   marginBottom: '5px',
    width: '90%'
 };
 
