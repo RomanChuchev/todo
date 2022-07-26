@@ -1,7 +1,12 @@
 import React from "react";
 
-const TodoListItem = () => {
-   return <span>Learn React</span>
+const TodoListItem = ( { label, important = false } ) => {
+   
+   const spanStyle = {
+      fontWeight: important ? '600' : '400'
+   }
+   
+   return <span style={spanStyle}>{ label }</span>
 };
 
 export default TodoListItem;
