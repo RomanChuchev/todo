@@ -6,7 +6,7 @@ const TodoListItem = ( { label, important = false } ) => {
       fontWeight: important ? '600' : '400'
    }
    
-   return <span style={spanStyle}>{ label }</span>
+   return <span style={ spanStyle }>{ label }</span>
 };
 
 export default TodoListItem;
