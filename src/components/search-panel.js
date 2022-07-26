@@ -1,18 +1,13 @@
-import React from "react";
+import React from 'react';
+
+import './search-panel.css';
 
 const SearchPanel = () => {
-   const searchText = 'Type here to search'
-   
-    return <input 
-       className='form-control'
-       style={marginAutoStyle}
-       placeholder={searchText} />
- };
-
- const marginAutoStyle = {
-   margin: 'auto',
-   marginBottom: '5px',
-   width: '90%'
+  return (
+    <input type="text"
+              className="form-control search-input"
+              placeholder="type to search" />
+  );
 };
 
 export default SearchPanel;
