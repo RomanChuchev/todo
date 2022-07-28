@@ -85,7 +85,7 @@ export default class App extends Component {
       };
     });
   }
-  
+
   render() {
       const {todoData} = this.state
       const doneCount = todoData.filter((el) => el.done).length
