@@ -10,8 +10,7 @@ import './app.css';
 
 export default class App extends Component {
 
-  maxId = 100;
-
+  randomId = Math.floor(Math.random() * (10000 - 1000) + 1000)
   state = {
       todoData: [
         this.createTodoItem('Make Awesome App'),
@@ -22,12 +21,23 @@ export default class App extends Component {
       filter: 'all'
   };
 
+  componentDidMount() {
+    const userData = JSON.parse(localStorage.getItem('todo'))
+    if (userData) {
+      this.setState({todoData: userData})
+    }
+  }
+
+  componentDidUpdate() {
+    localStorage.setItem('todo', JSON.stringify(this.state.todoData))
+  }
+
   createTodoItem(label) {
     return {
       label,
       important: false,
       done: false,
-      id: this.maxId++
+      id: this.randomId++
     }
   }
   
