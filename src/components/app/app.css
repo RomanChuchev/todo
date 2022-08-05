@@ -1,6 +1,11 @@
+body {
+  background-image: none;
+}
+
 .todo-app {
    margin: 2rem auto 0 auto;
    max-width: 90%;
+  
  }
  
  .top-panel {

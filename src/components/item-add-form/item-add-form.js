@@ -36,7 +36,7 @@ export default class ItemAddForm extends Component {
             />
             <button  
                type="button"
-               className="btn btn-info"
+               className="btn btn-primary"
                onClick={this.onSubmit} >
                Add item
             </button>
