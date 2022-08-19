@@ -1,0 +1,43 @@
+body {
+  background-image: none;
+}
+
+.todo-app {
+  margin: 2rem auto 0 auto;
+  max-width: 90%;
+}
+
+.top-panel {
+  margin: 1rem 0;
+}
+
+.app-header {
+  align-items: flex-end;
+}
+
+.app-header h1 {
+  flex-grow: 1;
+}
+
+.app-header h2 {
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.item-add-form {
+  margin-top: 5px;
+}
+
+.form {
+  padding: 2px;
+}
+
+.search-input {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+}
+
+.todo-list .list-group-item {
+  padding: 0.25rem 0.75rem;
+}
